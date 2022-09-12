@@ -46,27 +46,33 @@ class LinkedList{
                 AddLast(tmpData);
                 continue;
             }
+            else if(ss=="display"){
+                Display();
+                continue;
+            }
+            else if(ss=="size"){
+                cout<<size<<endl;
+                continue;
+            }
 
             return ;
         }
         
     }
 
-    void Print(){
+    void Display(){
         Node*tmp = head ;
+        if(tmp==nullptr) return ;
         while(tmp){
-            cout<<tmp->data<<endl;
+            cout<<tmp->data<<" ";
             tmp =  tmp->next ;
         }
+        cout<<endl;
     }
 };
 
 int main(){
     LinkedList linkedList ;
     linkedList.Execute();
-    linkedList.Print();
-    cout<<linkedList.size<<endl;
-    if(linkedList.tail){
-        cout<<linkedList.tail->data<<endl;
-    }
+    
 }
