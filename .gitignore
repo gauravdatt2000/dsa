@@ -3,3 +3,9 @@
 .vscode/settings.json
 .vscode/tasks.json
 Linked_List/LinkedList
+Linked_List/run.sh
+Linked_List/input.txt
+Linked_List/output.txt
+.gitignore
+Linked_List/build/Debug/LinkedList.o
+Linked_List/build/Debug/outDebug
